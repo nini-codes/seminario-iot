@@ -1,7 +1,4 @@
 import java.util.Scanner;
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
-import java.util.Locale;
 import java.util.Random;
 
 // Classe que representa o dispositivo IoT
@@ -12,30 +9,20 @@ class DispositivoIoT {
     // Construtor da classe DispositivoIoT
     public DispositivoIoT(String id) {
         this.id = id;
-        this.temperatura = 0.0; // Inicializa a temperatura como 0°C
+        this.temperatura = 0.0; // Define a temperatura inicial como 0°C
     }
 
-    // Método para ler a temperatura do sensor conectado ao dispositivo
-    public void lerTemperatura() {
-        // Aqui, você pode implementar a lógica para ler a temperatura de um sensor real
-        // Neste exemplo, vamos simular uma temperatura aleatória para demonstração
+    // Método para gerar uma temperatura aleatória
+    public void gerarTemperatura() {
         Random random = new Random();
-        this.temperatura = 20 + (random.nextDouble() * 15); // Temperatura aleatória entre 20°C e 35°C
+        this.temperatura = 20 + (random.nextDouble() * 15); // Definidindo uma temperatura aleatória entre 20°C e 35°C
     }
 
-    // Método para enviar os dados de temperatura para o servidor
+    // Método para enviar os dados de temperatura para o servidor ficticio
     public void enviarDadosParaServidor() {
-        System.out.println("Enviando dados do dispositivo " + id + " para o servidor: Temperatura = " + formatarTemperatura(temperatura) + "°C");
+        System.out.println("Enviando dados do dispositivo " + id + " para o servidor: Temperatura = " + temperatura + "°C");
         // Código para enviar os dados para o servidor
-        // Aqui normalmente você teria algum código de comunicação com o servidor IoT
-    }
-    
-    // Método para formatar a temperatura com um número específico de casas decimais
-    private String formatarTemperatura(double temperatura) {
-        // Definindo o formato desejado para a temperatura
-        DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.getDefault());
-        DecimalFormat df = new DecimalFormat("#.##", symbols); // Aqui você pode alterar o formato conforme necessário
-        return df.format(temperatura);
+        // Utilizando print para demonstracao do programa
     }
 }
 
@@ -51,8 +38,8 @@ public class Main {
         // Criando um objeto de dispositivo IoT com o ID fornecido pelo usuário
         DispositivoIoT dispositivo = new DispositivoIoT(idDispositivo);
 
-        // Ler temperatura do sensor e enviar para o servidor
-        dispositivo.lerTemperatura();
+        // Gerar temperatura e enviar para o servidor
+        dispositivo.gerarTemperatura();
         dispositivo.enviarDadosParaServidor();
     }
 }
