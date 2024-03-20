@@ -6,7 +6,7 @@ Foi solicitado a criação de algoritmos simples com exemplos práticos dos conc
 
 Linguagens: Java, Python e JavaScript.
 
-IDE: Visual Studio Code e Clion.
+IDE: Visual Studio Code e WebStorm.
 
 # Funcionalidades do projeto:
 
