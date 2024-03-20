@@ -20,8 +20,9 @@ class DispositivoIoT {
 
     // Método para enviar os dados de temperatura para o servidor ficticio
     public void enviarDadosParaServidor() {
+        String temperaturaFormatada = String.format("%.2f", temperatura);
         System.out.println(
-                "Enviando dados do dispositivo " + id + " para o servidor: Temperatura = " + temperatura + "°C");
+                "Enviando dados do dispositivo " + id + " para o servidor: Temperatura = " + temperaturaFormatada + "°C");
         // Código para enviar os dados para o servidor
         // Utilizando print para demonstracao do programa
     }
