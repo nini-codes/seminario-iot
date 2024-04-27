@@ -1,4 +1,4 @@
-# Seminário - Computação Ubíqua e Internet das Coisas. 🖥️
+# Seminário - Computação Ubíqua e Internet das Coisas.
 
 Foi solicitado a criação de algoritmos simples com exemplos práticos dos conceitos abordados durante o seminário. Cada algoritmo deve conter comentários explicativos e explicações passo a passo para facilitar a compreensão por parte de pessoas não familiarizadas com o assunto. Além disso, foi requisitada uma breve explicação geral sobre o funcionamento do código e o significado de cada elemento utilizado.
 
