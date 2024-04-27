@@ -13,7 +13,7 @@ class DispositivoIoT{
     // Método para gerar uma temperatura aleatória
     public void gerarTemperatura() {
         Random random = new Random();
-        this.temperatura = 20 + (random.nextDouble() * 15); // Definidindo uma temperatura aleatória entre 20°C e 35°C
+        this.temperatura = 20 + (random.nextDouble() * 15); // Definindo uma temperatura aleatória entre 20°C e 35°C
     }
 
     // Método para enviar os dados de temperatura para o servidor ficticio
@@ -24,6 +24,4 @@ class DispositivoIoT{
                 // Código para enviar os dados para o servidor
                 // Utilizando print para demonstracao do programa
     }
-
-
 }

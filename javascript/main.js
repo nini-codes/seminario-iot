@@ -11,7 +11,8 @@ const restaurantes = [
 function recomendarRestaurante(localUsuario) {
     return restaurantes.reduce((restauranteMaisProximo, restaurante) => {
         const distanciaAtual = Math.abs(localUsuario.lat - restaurante.lat) + Math.abs(localUsuario.lon - restaurante.lon);
-        const distanciaMaisProxima = Math.abs(localUsuario.lat - restauranteMaisProximo.lat) + Math.abs(localUsuario.lon - restauranteMaisProximo.lon);
+        const distanciaMaisProxima = Math.abs(localUsuario.lat - restauranteMaisProximo.lat) + 
+        Math.abs(localUsuario.lon - restauranteMaisProximo.lon);
         return (distanciaAtual < distanciaMaisProxima) ? restaurante : restauranteMaisProximo;
     });
 }

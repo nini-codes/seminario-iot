@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/seminario-iot.iml" filepath="$PROJECT_DIR$/seminario-iot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/seminarioiot.iml" filepath="$PROJECT_DIR$/.idea/seminarioiot.iml" />
     </modules>
   </component>
 </project>
